@@ -1,0 +1,13 @@
+﻿<main id="mainContent">
+    <app-city-select [selectedCity]="selectedCity" (city)="onCitySelect($event)"></app-city-select>
+    <app-search-box [searchInput]="searchTerm" (inputChange)="onSearchTerm($event)"></app-search-box>
+    <app-bank-list [banklist]="displayData | async"></app-bank-list>
+    <div class="pagin">
+    <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [maxSize]="5"
+  [collectionSize]="(searchResultsLength$|async)" (pageChange)="onPageChange($event)"></ngb-pagination>
+  </div>
+      
+</main>

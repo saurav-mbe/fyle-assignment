@@ -1,0 +1,8 @@
+<div class="card">
+    {{bankitem.name}}
+    <div class="card-body">
+      <h5 class="card-title" [innerHTML]="bankitem.bank_namedis || bankitem.bank_name"></h5>
+      <h6 class="card-subtitle mb-2 italic" [innerHTML]="bankitem.ifscdis ||bankitem.ifsc"></h6>
+      <p class="card-text" [innerHTML]="bankitem.addressdis || bankitem.address"></p>
+    </div>
+  </div>

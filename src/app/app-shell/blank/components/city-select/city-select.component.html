@@ -1,0 +1,5 @@
+<div>
+  <button class="btn" [ngClass]="{'btn-success':selectedCity==c,'btn-primary':selectedCity!=c}" *ngFor="let c of cityList" (click)="onCitySelect(c)">
+    {{c}}
+  </button>
+</div>

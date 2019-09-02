@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input type="text" class="form-control" id="searchInput"
+      (input)="onInputChange($event)" (ngModel)="searchText"
+      placeholder="Search by bank, ifsc" #searchBox autofocus
+      />
+    </div>
+</form>
